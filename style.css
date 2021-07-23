@@ -25,9 +25,9 @@ p {
 }
 
 .about-me-img{
-    height: 400px;
-    width: 17%;
-    margin: 40px;
+    height: auto;
+    max-width: 70%;
+    
 }
 
 .about-me-img2{
