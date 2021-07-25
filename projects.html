@@ -1,25 +1,211 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="style.css" type="text/css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+      <link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
       <title>My First Website</title>
   </head>
 
   <body>  
-    <h1>Daniel Tan</h1>
-    <h2> </h2>
-    <nav>
-      <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+      <a class="navbar-brand" href="#"><h1 class="display-6">Daniel Tan</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html"><u>Projects</u></a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
       </ul>
+    </div>
+  </div>
     </nav>
     
-    
+    <br/>
+<!--Projects-->
+
+<div class="container">
+  <h1 class="display-5">Projects</h1>
+  <br>
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="width: 18rem;"> 
+        <img class="card-img top" src="Images/pdac_paper.png">
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title">Publication: PDAC Heterogeneity via Splicing</h3>
+          <p class="card-subtitle">Status: Complete (Dec 2020)</p>
+          <p class="card-text">My first first-author research paper that found asymmetric intron 
+            retention events to be strongly linked to survival outcomes in pancreatic adenocarcinoma patients.</p>
+            <a href="#PDAC" class="stretched-link" data-toggle="modal" role="button"></a>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="PDAC" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="BackdropLabel">PDAC Heterogeneity via Splicing</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+          </div>
+          <div class="modal-body">
+            <h6 class="technologies">Technologies used: R, Python, Bash</h6>
+            <p> Changes in AS have previously been linked to the “hallmarks of cancer” i.e. replicative immortality, 
+              sustained proliferation, etc which made it a very promising direction in PDAC to investigate. nalyses 
+              like splicing event quantification, I was able to uncover clinically relevant and novel PDAC subtypes 
+              distinguished by clear-cut, asymmetric patterns of intron retention in specific groups of genes.
+            </p>
+              <a href="https://www.nature.com/articles/s41525-020-00159-4" target="_blank" class="btn btn-outline-info">Paper</a>
+              <a href="https://github.com/danjst/PDAC_2020" target="_blank" class="btn btn-outline-info">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-4">
+      <div class="card" style="width: 18rem;"> 
+        <img class="card-img top" src="Images/ventilator_project.jpeg">
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title">COVID-19 ARDS Time Series Analysis</h3>
+          <p class="card-subtitle">Status: In-Progress</p>
+          <p class="card-text">Survival Analysis and Clinical Outcomes Prediction of COVID-19 ARDS Patients using Real-Time ICU Devices Data.</p>
+            <a href="#time_series" class="stretched-link" data-toggle="modal" role="button"></a>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="time_series" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="BackdropLabel">COVID-19 ARDS Time Series Analysis</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+          </div>
+          <div class="modal-body">
+            <p> In the field of digital health, there has been a growing interest in developing AI-
+              based models capable of incorporating dynamic MV data to predict various clinical
+              outcomes such as successful weaning in intubated patients7 and extubation failure in
+              neonates.8 However to the best of our knowledge, no study to date has investigated the
+              use of real-time MV data to predict survival outcomes in CARDS patients. We seek to
+              develop a model capable of learning temporal patterns from combinations of dynamic
+              MV-derived features, e.g., tidal volume, plateau pressure, respiratory compliance,
+              oxygenation, etc., to identify CARDS patients at the highest risk of mortality in real-time.
+              This work can help assist clinicians in identifying which patients are to be prioritized in a
+              fast-paced intensive-care setting.
+            </p>
+              <a href="https://github.com/danjst/covid19_ards_ventilator_project" target="_blank" class="btn btn-outline-info">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card" style="width: 18rem;"> 
+        <img class="card-img top" src="Images/lung_lesion.jpeg">
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title">Lung Lesion Diagnosis with Computer Vision</h3>
+          <p class="card-subtitle">Status: Complete (May 2021)</p>
+          <p class="card-text">Building a robust deep learning model trained on Stanford's CheXpert Dataset to classify lung lesions from radiology images. </p>
+            <a href="#time_series" class="stretched-link" data-toggle="modal" role="button"></a>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="time_series" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="BackdropLabel">COVID-19 ARDS Time Series Analysis</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+          </div>
+          <div class="modal-body">
+            <p> In the field of digital health, there has been a growing interest in developing AI-
+              based models capable of incorporating dynamic MV data to predict various clinical
+              outcomes such as successful weaning in intubated patients7 and extubation failure in
+              neonates.8 However to the best of our knowledge, no study to date has investigated the
+              use of real-time MV data to predict survival outcomes in CARDS patients. We seek to
+              develop a model capable of learning temporal patterns from combinations of dynamic
+              MV-derived features, e.g., tidal volume, plateau pressure, respiratory compliance,
+              oxygenation, etc., to identify CARDS patients at the highest risk of mortality in real-time.
+              This work can help assist clinicians in identifying which patients are to be prioritized in a
+              fast-paced intensive-care setting.
+            </p>
+              <a href="https://github.com/danjst/covid19_ards_ventilator_project" target="_blank" class="btn btn-outline-info">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+  <br> 
+
+<br>
+<br>
+
+  <!-- Footer -->
+  
+<footer class="bg-dark text-center text-white ">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-1">
+
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-2 btn-lg" href="https://bit.ly/3x0dIXl" role="button"
+        ><i class="ai ai-google-scholar-square"></i
+      ></a>
+
+      <!-- Email -->
+      <a class="btn btn-outline-light btn-floating m-2 btn-lg" href="mailto:danieljasontan@gmail.com" role="button"
+        ><i class="fas fa-envelope-square"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-2 btn-lg" href="https://www.linkedin.com/in/daniel-jason-tan/" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-2 btn-lg" href="https://github.com/danjst" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © <script type="text/javascript">
+				document.write(new Date().getFullYear());
+			</script> Daniel Tan
+
+      <br>
+			I handcrafted this site with HTML and CSS, aided by Bootstrap
+			
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   </body>
 
 </html>

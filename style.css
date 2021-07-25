@@ -1,10 +1,6 @@
 body{
     background: ghostwhite;
-    margin: 80px;
-}
-
-.new-link{
-    text-decoration: line-through;
+  
 }
 
 .about-h2{
@@ -16,31 +12,50 @@ p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica;
   }
 
-.nav-item{
-    text-decoration: none;
-}
-
-.navbar-link{
-    text-decoration: none;
-}
-
 .about-me-img{
     height: auto;
     max-width: 70%;
     
 }
 
-.about-me-img2{
-    max-width: 100%;
-    height: auto;
-    width: 200px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
-}
-
 footer {
+    position: absolute;
+    width: 100%;
     
-    border-top: 3px solid rgb(59, 56, 66);
   }
 
+  .navbar-custom {
+    background-color: lightgreen;
+}
+
+.nav-link {
+    font-size: 150%;
+  }
+
+  .navbar-nav{
+      padding-right: 30px;
+  }
+
+  .nav-item{
+      padding-right: 30px;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica;
+
+  }
+
+  .navbar-brand{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica;
+
+  }
+
+  .card-subtitle {
+    color: grey;
+    padding-bottom:5%
+  }
+  
+  .card:hover{
+    background-color: rgb(232, 232, 230);
+  }
+
+.technologies{
+    color:grey;
+}
