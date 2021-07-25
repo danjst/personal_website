@@ -95,6 +95,7 @@
 						  </button>
           </div>
           <div class="modal-body">
+            <h6 class="technologies">Technologies used: R, Python, Bash</h6>
             <p> In the field of digital health, there has been a growing interest in developing AI-
               based models capable of incorporating dynamic MV data to predict various clinical
               outcomes such as successful weaning in intubated patients7 and extubation failure in
@@ -116,37 +117,33 @@
       <div class="card" style="width: 18rem;"> 
         <img class="card-img top" src="Images/lung_lesion.jpeg">
         <div class="card-body d-flex flex-column">
-          <h3 class="card-title">Lung Lesion Diagnosis with Computer Vision</h3>
+          <h3 class="card-title">Lung Lesion Diagnosis using Computer Vision</h3>
           <p class="card-subtitle">Status: Complete (May 2021)</p>
           <p class="card-text">Building a robust deep learning model trained on Stanford's CheXpert Dataset to classify lung lesions from radiology images. </p>
-            <a href="#time_series" class="stretched-link" data-toggle="modal" role="button"></a>
+            <a href="#lung_lesion" class="stretched-link" data-toggle="modal" role="button"></a>
             
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="time_series" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="lung_lesion" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="BackdropLabel">COVID-19 ARDS Time Series Analysis</h5>
+            <h5 class="modal-title" id="BackdropLabel">Lung Lesion Diagnosis using Computer Vision</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						  </button>
           </div>
           <div class="modal-body">
-            <p> In the field of digital health, there has been a growing interest in developing AI-
-              based models capable of incorporating dynamic MV data to predict various clinical
-              outcomes such as successful weaning in intubated patients7 and extubation failure in
-              neonates.8 However to the best of our knowledge, no study to date has investigated the
-              use of real-time MV data to predict survival outcomes in CARDS patients. We seek to
-              develop a model capable of learning temporal patterns from combinations of dynamic
-              MV-derived features, e.g., tidal volume, plateau pressure, respiratory compliance,
-              oxygenation, etc., to identify CARDS patients at the highest risk of mortality in real-time.
-              This work can help assist clinicians in identifying which patients are to be prioritized in a
-              fast-paced intensive-care setting.
+            <h6 class="technologies">Technologies used: R, Python, Bash</h6>
+            <p> Using the Stanford CheXpert Dataset, we employ various modeling, sampling, and data cleaning methods throughout our study. 
+              Classification models used include convolutional neural networks with VGG16 and DenseNet121 architectures and a random forest 
+              model as baseline for comparison. Sampling methods used include oversampling the minority case and undersampling the majority 
+              case with different proportions. Various data cleaning strategies were employed including redefinition of negative cases and 
+              exclusion of lateral chest x-rays in an attempt to improve model focus.
             </p>
-              <a href="https://github.com/danjst/covid19_ards_ventilator_project" target="_blank" class="btn btn-outline-info">Code</a>
+              <a href="https://github.com/ericyang789/Lung-Lesion-Diagnosis" target="_blank" class="btn btn-outline-info">Code</a>
           </div>
         </div>
       </div>
