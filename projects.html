@@ -7,7 +7,8 @@
       <link rel="stylesheet" href="style.css" type="text/css">
       <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
       <link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
-      <title>My First Website</title>
+      <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+      <title>Projects</title>
   </head>
 
   <body>  
@@ -96,7 +97,7 @@
 						  </button>
           </div>
           <div class="modal-body">
-            <h6 class="technologies">Technologies used: R, Python, Bash</h6>
+            <h6 class="technologies">Technologies used: R, Bash</h6>
             <p> In the field of digital health, there has been a growing interest in developing AI-
               based models capable of incorporating dynamic MV data to predict various clinical
               outcomes such as successful weaning in intubated patients7 and extubation failure in
@@ -137,7 +138,7 @@
 						  </button>
           </div>
           <div class="modal-body">
-            <h6 class="technologies">Technologies used: R, Python, Bash</h6>
+            <h6 class="technologies">Technologies used: Python (Keras, scikit-learn)</h6>
             <p> Using the Stanford CheXpert Dataset, we employ various modeling, sampling, and data cleaning methods throughout our study. 
               Classification models used include convolutional neural networks with VGG16 and DenseNet121 architectures and a random forest 
               model as baseline for comparison. Sampling methods used include oversampling the minority case and undersampling the majority 
@@ -150,6 +151,135 @@
       </div>
     </div>
 </div>
+
+<br>
+<!--Second Row-->
+
+<div class="row">
+  <div class="col-4">
+    <div class="card" style="width: 18rem;"> 
+      <img class="card-img top" src="Images/tsne.png">
+      <div class="card-body d-flex flex-column">
+        <h3 class="card-title">Parallelized t-SNE</h3>
+        <p class="card-subtitle">Status: Complete (May 2021)</p>
+        <p class="card-text">Parallelization of t-SNE algorithm using accelarated GPU computing (openACC)
+          and other techniques. 
+        </p>
+          <a href="#tsne" class="stretched-link" data-toggle="modal" role="button"></a>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="tsne" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="BackdropLabel">Parallelized t-SNE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <h6 class="technologies">Technologies used: Python, C</h6>
+          <p> At its core, t-SNE involved a tremendous amount of matrix operations, 
+            especially given the size of matrices in applications that utilize t-SNE. 
+            In the PCA component of t-SNE, the numerical complexity of the sequential 
+            part grows by O(M squared), where M is the number of samples in the matrix 
+            while the parallel part grows by O(M cubed). We implemented the t-SNE algorithm 
+            in C from scratch that combines concepts from fields such as information theory, 
+            numerical optimization and high performance computing. With an implementation in 
+            a lower level programming language like C, we open the door to many parallelization 
+            and optimization possibilities for t-SNE. In terms of big compute parallelization, 
+            we were able to validate our design intentions and tackled areas of the algorithm 
+            that yielded the most fruitful speedups.
+          </p>
+            <a href="https://github.com/ericyang789/Parallel-Compute-Project" target="_blank" class="btn btn-outline-info">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="card" style="width: 18rem;"> 
+      <img class="card-img top" src="Images/website_profile3.png">
+      <div class="card-body d-flex flex-column">
+        <h3 class="card-title">Building my own Website</h3>
+        <p class="card-subtitle">Status: In-Progress</p>
+        <p class="card-text">Designing and coding this website from scratch using HTML, CSS, and Bootstrap.</p>
+          <a href="#personal_website" class="stretched-link" data-toggle="modal" role="button"></a>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="personal_website" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="BackdropLabel">Building my own Website</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <h6 class="technologies">Technologies used: HTML, CSS, Bootstrap</h6>
+          <p> In the field of digital health, there has been a growing interest in developing AI-
+            based models capable of incorporating dynamic MV data to predict various clinical
+            outcomes such as successful weaning in intubated patients and extubation failure in
+            neonates. However to the best of our knowledge, no study to date has investigated the
+            use of real-time MV data to predict survival outcomes in CARDS patients. We seek to
+            develop a model capable of learning temporal patterns from combinations of dynamic
+            MV-derived features, e.g., tidal volume, plateau pressure, respiratory compliance,
+            oxygenation, etc., to identify CARDS patients at the highest risk of mortality in real-time.
+            This work can help assist clinicians in identifying which patients are to be prioritized in a
+            fast-paced intensive-care setting.
+          </p>
+            <a href="https://github.com/danjst/personal_website" target="_blank" class="btn btn-outline-info">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="card" style="width: 18rem;"> 
+      <img class="card-img top" src="Images/adverse_events.png">
+      <div class="card-body d-flex flex-column">
+        <h3 class="card-title">Adverse Events Interactive Visualization App</h3>
+        <p class="card-subtitle">Status: Complete (May 2021)</p>
+        <p class="card-text">RShiny app for interactive visualization of FDA Adverse Events dataset.</p>
+          <a href="#adverse_events" class="stretched-link" data-toggle="modal" role="button"></a>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="adverse_events" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="BackdropLabel">Adverse Events Interactive Visualization App</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <h6 class="technologies">Technologies used: R (RShiny, plotly R, tidyverse)</h6>
+          <p> Using the Stanford CheXpert Dataset, we employ various modeling, sampling, and data cleaning methods throughout our study. 
+            Classification models used include convolutional neural networks with VGG16 and DenseNet121 architectures and a random forest 
+            model as baseline for comparison. Sampling methods used include oversampling the minority case and undersampling the majority 
+            case with different proportions. Various data cleaning strategies were employed including redefinition of negative cases and 
+            exclusion of lateral chest x-rays in an attempt to improve model focus.
+          </p>
+          <a href="https://danjst.shinyapps.io/adverse-events-viz/" target="_blank" class="btn btn-outline-info">Web App</a>
+            <a href="https://github.com/ericyang789/Adverse-Events-Viz" target="_blank" class="btn btn-outline-info">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Second Row-->
 </div>
   <br> 
 
@@ -194,7 +324,7 @@
 			</script> Daniel Tan
 
       <br>
-			I handcrafted this site with HTML and CSS, aided by Bootstrap
+			This site was handmade using HTML, CSS, and Bootstrap
 			
     </div>
     <!-- Copyright -->
