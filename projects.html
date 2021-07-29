@@ -6,8 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="style.css" type="text/css">
       <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
-      <link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
-      <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+      <link rel="shortcut icon" href="favicon_io/logo.ico" type="image/x-icon">
       <title>Projects</title>
   </head>
 
@@ -21,10 +21,11 @@
       
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="projects.html"><u>Projects</u></a></li>
         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
       </ul>
     </div>
   </div>
@@ -33,17 +34,17 @@
     <br/>
 <!--Projects-->
 
-<div class="container">
+<div class="container-fluid padding">
   <h1 class="display-5">Projects</h1>
   <br>
-  <div class="row">
-    <div class="col-4">
-      <div class="card" style="width: 18rem;"> 
-        <img class="card-img top" src="Images/pdac_paper.png">
+  <div class="row padding">
+    <div class="col-lg-4 d-flex" style="padding-right:5%;">
+      <div class="card"> 
+        <img class="card-img top" src="images/pdac_paper.png">
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Publication: PDAC Heterogeneity via Splicing</h3>
           <p class="card-subtitle">Status: Complete (Dec 2020)</p>
-          <p class="card-text">My first first-author research paper that found asymmetric intron 
+          <p class="card-text">My Nature publication that found intron 
             retention events to be strongly linked to survival outcomes in pancreatic adenocarcinoma patients.</p>
             <a href="#PDAC" class="stretched-link" data-toggle="modal" role="button"></a>
             
@@ -63,24 +64,28 @@
           <div class="modal-body">
             <h6 class="technologies">Technologies used: R, Python, Bash</h6>
             <p> Changes in AS have previously been linked to the “hallmarks of cancer” i.e. replicative immortality, 
-              sustained proliferation, etc which made it a very promising direction in PDAC to investigate. nalyses 
-              like splicing event quantification, I was able to uncover clinically relevant and novel PDAC subtypes 
-              distinguished by clear-cut, asymmetric patterns of intron retention in specific groups of genes.
+              sustained proliferation, etc which made it a very promising direction in PDAC to investigate. Using techniques
+               such as unsupervised machine learning in conjunction with more specialized analyses like splicing event quantification, 
+               I was able to uncover clinically relevant and novel PDAC subtypes distinguished by clear-cut, asymmetric 
+               patterns of intron retention in specific groups of genes. 
+           
             </p>
               <a href="https://www.nature.com/articles/s41525-020-00159-4" target="_blank" class="btn btn-outline-info">Paper</a>
               <a href="https://github.com/danjst/PDAC_2020" target="_blank" class="btn btn-outline-info">Code</a>
+              <a href="files/pdac_poster.pdf" target="_blank" class="btn btn-outline-info">Poster</a>
           </div>
         </div>
       </div>
     </div>
+    
   
-    <div class="col-4">
-      <div class="card" style="width: 18rem;"> 
-        <img class="card-img top" src="Images/ventilator_project.jpeg">
+    <div class="col-lg-4 d-flex" style="padding-right:5%;">
+      <div class="card"> 
+        <img class="card-img top" src="images/ventilator_project.jpeg">
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">COVID-19 ARDS Time Series Analysis</h3>
           <p class="card-subtitle">Status: In-Progress</p>
-          <p class="card-text">Survival Analysis and Clinical Outcomes Prediction of COVID-19 ARDS Patients using Real-Time ICU Devices Data.</p>
+          <p class="card-text">Survival Analysis and Clinical Outcomes Prediction of COVID-19 ARDS Patients using Real-Time ICU device data.</p>
             <a href="#time_series" class="stretched-link" data-toggle="modal" role="button"></a>
             
         </div>
@@ -115,9 +120,9 @@
       </div>
     </div>
 
-    <div class="col-4">
-      <div class="card" style="width: 18rem;"> 
-        <img class="card-img top" src="Images/lung_lesion.jpeg">
+    <div class="col-lg-4 d-flex" style="padding-right:5%;">
+      <div class="card" > 
+        <img class="card-img top" src="images/lung_lesion.jpeg">
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Lung Lesion Diagnosis with Computer Vision</h3>
           <p class="card-subtitle">Status: Complete (May 2021)</p>
@@ -155,15 +160,15 @@
 <br>
 <!--Second Row-->
 
-<div class="row">
-  <div class="col-4">
-    <div class="card" style="width: 18rem;"> 
-      <img class="card-img top" src="Images/tsne.png">
+<div class="row padding">
+  <div class="col-lg-4 d-flex" style="padding-right:5%;">
+    <div class="card"> 
+      <img class="card-img top" src="images/tsne.png">
       <div class="card-body d-flex flex-column">
         <h3 class="card-title">Parallelized t-SNE</h3>
         <p class="card-subtitle">Status: Complete (May 2021)</p>
-        <p class="card-text">Parallelization of t-SNE algorithm using accelarated GPU computing (openACC)
-          and other techniques. 
+        <p class="card-text">Parallelization of t-SNE algorithm using shared memory parallel architechtures (OpenMP) and accelarated GPU computing (OpenACC).
+         
         </p>
           <a href="#tsne" class="stretched-link" data-toggle="modal" role="button"></a>
           
@@ -182,7 +187,7 @@
         </div>
         <div class="modal-body">
           <h6 class="technologies">Technologies used: Python, C</h6>
-          <p> At its core, t-SNE involved a tremendous amount of matrix operations, 
+          <p> At its core, t-SNE involves a tremendous amount of matrix operations, 
             especially given the size of matrices in applications that utilize t-SNE. 
             In the PCA component of t-SNE, the numerical complexity of the sequential 
             part grows by O(M squared), where M is the number of samples in the matrix 
@@ -200,11 +205,11 @@
     </div>
   </div>
 
-  <div class="col-4">
-    <div class="card" style="width: 18rem;"> 
-      <img class="card-img top" src="Images/website_profile3.png">
+  <div class="col-lg-4 d-flex" style="padding-right:5%;">
+    <div class="card"> 
+      <img class="card-img top" src="images/website_profile4.png">
       <div class="card-body d-flex flex-column">
-        <h3 class="card-title">Building my own Website</h3>
+        <h3 class="card-title">Building this Website from Scratch</h3>
         <p class="card-subtitle">Status: In-Progress</p>
         <p class="card-text">Designing and coding this website from scratch using HTML, CSS, and Bootstrap.</p>
           <a href="#personal_website" class="stretched-link" data-toggle="modal" role="button"></a>
@@ -217,23 +222,16 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="BackdropLabel">Building my own Website</h5>
+          <h5 class="modal-title" id="BackdropLabel">Building this Website from Scratch.</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
           <h6 class="technologies">Technologies used: HTML, CSS, Bootstrap</h6>
-          <p> In the field of digital health, there has been a growing interest in developing AI-
-            based models capable of incorporating dynamic MV data to predict various clinical
-            outcomes such as successful weaning in intubated patients and extubation failure in
-            neonates. However to the best of our knowledge, no study to date has investigated the
-            use of real-time MV data to predict survival outcomes in CARDS patients. We seek to
-            develop a model capable of learning temporal patterns from combinations of dynamic
-            MV-derived features, e.g., tidal volume, plateau pressure, respiratory compliance,
-            oxygenation, etc., to identify CARDS patients at the highest risk of mortality in real-time.
-            This work can help assist clinicians in identifying which patients are to be prioritized in a
-            fast-paced intensive-care setting.
+          <p> I started this personal website as a summer mini-project after teaching myself HTML and CSS. 
+            The base website took 3 days to build from scratch, but this site will continually updated over time. My code
+            for the website is provided in the Github repository linked below. 
           </p>
             <a href="https://github.com/danjst/personal_website" target="_blank" class="btn btn-outline-info">Code</a>
         </div>
@@ -241,13 +239,13 @@
     </div>
   </div>
 
-  <div class="col-4">
-    <div class="card" style="width: 18rem;"> 
-      <img class="card-img top" src="Images/adverse_events.png">
+  <div class="col-lg-4 d-flex" style="padding-right:5%;">
+    <div class="card"> 
+      <img class="card-img top" src="images/adverse_events.png">
       <div class="card-body d-flex flex-column">
         <h3 class="card-title">Adverse Events Interactive Visualization App</h3>
         <p class="card-subtitle">Status: Complete (May 2021)</p>
-        <p class="card-text">RShiny app for interactive visualization of FDA Adverse Events dataset.</p>
+        <p class="card-text">RShiny web app for interactive visualization of FDA Adverse Events dataset.</p>
           <a href="#adverse_events" class="stretched-link" data-toggle="modal" role="button"></a>
           
       </div>
@@ -265,11 +263,15 @@
         </div>
         <div class="modal-body">
           <h6 class="technologies">Technologies used: R (RShiny, plotly R, tidyverse)</h6>
-          <p> Using the Stanford CheXpert Dataset, we employ various modeling, sampling, and data cleaning methods throughout our study. 
-            Classification models used include convolutional neural networks with VGG16 and DenseNet121 architectures and a random forest 
-            model as baseline for comparison. Sampling methods used include oversampling the minority case and undersampling the majority 
-            case with different proportions. Various data cleaning strategies were employed including redefinition of negative cases and 
-            exclusion of lateral chest x-rays in an attempt to improve model focus.
+          <p> The adverse events dataset is compiled by the U.S. Food and Drug Administration 
+            Center for Food Safety and Applied Nutrition (CSFAN). These products include foods, 
+            dietary supplements and cosmetics. We designed our visualization primarily for FDA regulatory 
+            personnel who are interested in understanding profiles of adverse events caused 
+            by in-market products under their jurisdiction. The profiles integrate basic victim,
+             product and medical outcome information to provide regulators a comprehensive view 
+             that accounts for all components of an adverse event.  Regulators can use this visualization 
+             for exploratory analyses and allow these insights to guide regulatory processes and decisions 
+             on products under review/in-market.
           </p>
           <a href="https://danjst.shinyapps.io/adverse-events-viz/" target="_blank" class="btn btn-outline-info">Web App</a>
             <a href="https://github.com/ericyang789/Adverse-Events-Viz" target="_blank" class="btn btn-outline-info">Code</a>
@@ -280,11 +282,63 @@
 </div>
 
 <!--Second Row-->
+
+<!--Third Row-->
+<div class="row padding">
+  <div class="col-md-4 d-flex" style="padding-right:5%;">
+    <div class="card"> 
+      <img class="card-img top" src="images/metabolites.png">
+      <div class="card-body d-flex flex-column">
+        <h3 class="card-title">MetabR</h3>
+        <p class="card-subtitle">Status: Complete (May 2020)</p>
+        <p class="card-text"> R package for UCLA Metabolomics quality control and analysis pipeline.
+        </p>
+          <a href="#metabr" class="stretched-link" data-toggle="modal" role="button"></a>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="metabr" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="BackdropLabel">MetabR</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <h6 class="technologies">Technologies used: R</h6>
+          <p> At its core, t-SNE involves a tremendous amount of matrix operations, 
+            especially given the size of matrices in applications that utilize t-SNE. 
+            In the PCA component of t-SNE, the numerical complexity of the sequential 
+            part grows by O(M squared), where M is the number of samples in the matrix 
+            while the parallel part grows by O(M cubed). We implemented the t-SNE algorithm 
+            in C from scratch that combines concepts from fields such as information theory, 
+            numerical optimization and high performance computing. With an implementation in 
+            a lower level programming language like C, we open the door to many parallelization 
+            and optimization possibilities for t-SNE. In terms of big compute parallelization, 
+            we were able to validate our design intentions and tackled areas of the algorithm 
+            that yielded the most fruitful speedups.
+          </p>
+            <a href="https://github.com/juyeki/MetabR" target="_blank" class="btn btn-outline-info">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+</div>
+<!--Third Row-->
 </div>
   <br> 
 
 <br>
 <br>
+
+
+
 
   <!-- Footer -->
   
@@ -325,6 +379,8 @@
 
       <br>
 			This site was handmade using HTML, CSS, and Bootstrap
+      <br>
+      Site last updated: July 29, 2021
 			
     </div>
     <!-- Copyright -->

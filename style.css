@@ -12,6 +12,14 @@ body.home{
     background-size: cover;
 }
 
+body.blog{
+    background: url(images/rousseau.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .about-h2{
     color:black;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica;
@@ -90,12 +98,14 @@ footer {
     color:grey;
 }
 
+/* 
 .card-img {
     width: 100%;
-    height: 17vw;
+    height: 40%;
     object-fit: cover;
+    
 }
-
+*/
 .home-text{
     color:white;
     text-shadow:
@@ -110,3 +120,34 @@ footer {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica;
 
 }
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.padding {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left:6%;
+    padding-right:6%;
+  }
+
+.btc-text{
+    overflow-wrap: break-word;
+    color:greenyellow;
+    text-shadow:
+    0.05em 0 black,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica;
+
+}
+
+div.btc-label {
+    line-height: 50%;
+  }
